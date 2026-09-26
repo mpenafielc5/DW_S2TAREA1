@@ -9,7 +9,7 @@
         content="Portafolio de Miguel Ángel Peñafiel Cadena, Ingeniero de Software especializado en desarrollo web y Business Intelligence.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
     <title>Miguel Peñafiel - Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script>
         (function () {
             const saved = localStorage.getItem('theme');
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <figure class="hero-image">
-                <img src="IMG_0006.JPG" alt="Fotografía de Miguel Peñafiel">
+                <img src="assets/img/profile/IMG_0006.JPG" alt="Fotografía de Miguel Peñafiel">
                 <figcaption class="visually-hidden">Miguel Peñafiel, Ingeniero de Software</figcaption>
             </figure>
         </section>
@@ -98,21 +98,21 @@
                     <h3>Backend & Datos</h3>
                     <ul class="skill-list">
                         <li>
-                            <img src="python.png" alt="Python" class="skill-icon">
+                            <img src="assets/img/icons/python.png" alt="Python" class="skill-icon">
                             <div class="skill-details">
                                 <span class="skill-name">Python</span>
                                 <span class="skill-level">Avanzado</span>
                             </div>
                         </li>
                         <li>
-                            <img src="django.png" alt="Django" class="skill-icon">
+                            <img src="assets/img/icons/django.png" alt="Django" class="skill-icon">
                             <div class="skill-details">
                                 <span class="skill-name">Django</span>
                                 <span class="skill-level">Avanzado</span>
                             </div>
                         </li>
                         <li>
-                            <img src="sql.png" alt="SQL" class="skill-icon">
+                            <img src="assets/img/icons/sql.png" alt="SQL" class="skill-icon">
                             <div class="skill-details">
                                 <span class="skill-name">SQL</span>
                                 <span class="skill-level">Avanzado</span>
@@ -125,21 +125,21 @@
                     <h3>Frontend</h3>
                     <ul class="skill-list">
                         <li>
-                            <img src="javascript.png" alt="JavaScript" class="skill-icon">
+                            <img src="assets/img/icons/javascript.png" alt="JavaScript" class="skill-icon">
                             <div class="skill-details">
                                 <span class="skill-name">JavaScript</span>
                                 <span class="skill-level">Intermedio</span>
                             </div>
                         </li>
                         <li>
-                            <img src="html5.png" alt="HTML5" class="skill-icon">
+                            <img src="assets/img/icons/html5.png" alt="HTML5" class="skill-icon">
                             <div class="skill-details">
                                 <span class="skill-name">HTML5</span>
                                 <span class="skill-level">Avanzado</span>
                             </div>
                         </li>
                         <li>
-                            <img src="css3.png" alt="CSS3" class="skill-icon">
+                            <img src="assets/img/icons/css3.png" alt="CSS3" class="skill-icon">
                             <div class="skill-details">
                                 <span class="skill-name">CSS3</span>
                                 <span class="skill-level">Intermedio</span>
@@ -152,14 +152,14 @@
                     <h3>Herramientas & BI</h3>
                     <ul class="skill-list">
                         <li>
-                            <img src="git.png" alt="Git" class="skill-icon">
+                            <img src="assets/img/icons/git.png" alt="Git" class="skill-icon">
                             <div class="skill-details">
                                 <span class="skill-name">Git</span>
                                 <span class="skill-level">Avanzado</span>
                             </div>
                         </li>
                         <li>
-                            <img src="pbi.png" alt="Power BI" class="skill-icon">
+                            <img src="assets/img/icons/pbi.png" alt="Power BI" class="skill-icon">
                             <div class="skill-details">
                                 <span class="skill-name">Power BI</span>
                                 <span class="skill-level">Intermedio</span>
@@ -176,7 +176,7 @@
             <div class="projects-grid">
                 <article class="project-card">
                     <figure>
-                        <img src="superstore.png" alt="Superstore Dashboard">
+                        <img src="assets/img/projects/superstore.png" alt="Superstore Dashboard">
                         <figcaption class="visually-hidden">Vista del dashboard de Superstore</figcaption>
                     </figure>
                     <div class="project-info">
@@ -200,7 +200,7 @@
 
                 <article class="project-card">
                     <figure>
-                        <img src="medicai.png" alt="Medic AI Platform">
+                        <img src="assets/img/projects/medicai.png" alt="Medic AI Platform">
                         <figcaption class="visually-hidden">Vista de la plataforma Medic AI</figcaption>
                     </figure>
                     <div class="project-info">
@@ -224,7 +224,7 @@
 
                 <article class="project-card">
                     <figure>
-                        <img src="petcare.png" alt="PetCare 360 BI Solution">
+                        <img src="assets/img/projects/petcare.png" alt="PetCare 360 BI Solution">
                         <figcaption class="visually-hidden">Vista del dashboard de PetCare 360</figcaption>
                     </figure>
                     <div class="project-info">
@@ -260,12 +260,14 @@
 
             <article class="ds-section">
                 <h3>Colores</h3>
+                <p>Paleta minimalista: base en escala de grises/grafito, con el rojo institucional reservado
+                    exclusivamente para acentos (botones principales, enlaces y detalles de marca).</p>
                 <div class="color-palette">
                     <div class="color-box" style="background: var(--color-primary); color: white;">
-                        Primary<br><span>#2563eb</span>
+                        Primary (acento)<br><span>#E4002B</span>
                     </div>
                     <div class="color-box" style="background: var(--color-secondary); color: white;">
-                        Secondary<br><span>#7c3aed</span>
+                        Secondary<br><span>#3F3F46</span>
                     </div>
                     <div class="color-box"
                         style="background: var(--color-background); border: 1px solid var(--color-surface-alt); color: var(--color-text);">
@@ -273,10 +275,10 @@
                     </div>
                     <div class="color-box"
                         style="background: var(--color-surface); border: 1px solid var(--color-surface-alt); color: var(--color-text);">
-                        Surface<br><span>#f8fafc</span>
+                        Surface<br><span>#f5f5f5</span>
                     </div>
-                    <div class="color-box" style="background: var(--color-text); color: white;">
-                        Text<br><span>#0f172a</span>
+                    <div class="color-box" style="background: var(--color-text); color: var(--color-background);">
+                        Text<br><span>#18181b</span>
                     </div>
                 </div>
             </article>
@@ -347,7 +349,7 @@
                 <div class="ds-card-demo">
                     <article class="project-card">
                         <figure>
-                            <img src="superstore.png" alt="Ejemplo de card de proyecto">
+                            <img src="assets/img/projects/superstore.png" alt="Ejemplo de card de proyecto">
                             <figcaption class="visually-hidden">Card de ejemplo</figcaption>
                         </figure>
                         <div class="project-info">
@@ -400,7 +402,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
