@@ -26,7 +26,15 @@ Portafolio personal e interactivo desarrollado como prueba técnica / tarea acad
 - Botón "Volver arriba"
 - Diseño responsive (móvil, tablet y escritorio)
 
+## Demo en vivo
+
+Puedes visualizar el portafolio web desplegado en GitHub Pages:
+
+[Ver portafolio en vivo](https://mpenafielc5.github.io/DW_S2TAREA1/)
+
 ## Resultados
+
+Capturas del portafolio web desarrollado:
 
 ### Inicio
 
