@@ -1,6 +1,6 @@
 # Portafolio Web - Miguel Angel Peñafiel Cadena
 
-Portafolio personal e interactivo desarrollado como prueba técnica / tarea académica, aplicando HTML5 semántico, CSS3 (Custom Properties) y JavaScript vanilla.
+Portafolio personal e interactivo desarrollado como prueba técnica y proyecto académico, aplicando HTML5 semántico, CSS3 y JavaScript vanilla. El proyecto presenta información profesional, habilidades técnicas, proyectos destacados y un sistema de componentes visuales.
 
 ## Contenido
 
@@ -14,21 +14,21 @@ Portafolio personal e interactivo desarrollado como prueba técnica / tarea acad
 ## Tecnologías utilizadas
 
 - HTML5 semántico
-- CSS3 (Custom Properties, Flexbox, Grid, Media Queries)
+- CSS3 (Custom Properties, Flexbox, Grid y Media Queries)
 - JavaScript (Vanilla JS, sin frameworks)
 
 ## Funcionalidades
 
 - Menú de navegación responsive
-- Modo claro / oscuro con persistencia en localStorage
-- Modal interactivo con el detalle de cada proyecto
-- Validación de formulario de contacto en tiempo real
+- Modo claro y oscuro con persistencia mediante `localStorage`
+- Modal interactivo para visualizar el detalle de cada proyecto
+- Validación del formulario de contacto en tiempo real
 - Botón "Volver arriba"
-- Diseño responsive (móvil, tablet y escritorio)
+- Diseño responsive para dispositivos móviles, tablets y escritorio
 
-## Demo en vivo
+## Instrucciones de visualizacion
 
-Puedes visualizar el portafolio web desplegado en GitHub Pages:
+El portafolio se encuentra desplegado mediante GitHub Pages y puede visualizarse directamente desde el navegador:
 
 [Ver portafolio en vivo](https://mpenafielc5.github.io/DW_S2TAREA1/)
 
@@ -58,7 +58,7 @@ Capturas del portafolio web desarrollado:
 
 ## Estructura del proyecto
 
-```
+```text
 ├── index.html
 ├── css/
 │   └── styles.css
@@ -68,16 +68,5 @@ Capturas del portafolio web desarrollado:
     └── img/
         ├── profile/
         ├── icons/
+        ├── portfolio/
         └── projects/
-```
-
-## Cómo visualizarlo
-
-1. Clona este repositorio.
-2. Abre index.html en tu navegador.
-
-## Contacto
-
-- Email: mpenafielc5@unemi.edu.ec
-- GitHub: https://github.com/mpenafielc5
-- LinkedIn: https://www.linkedin.com/in/miguexang/
