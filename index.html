@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Peñafiel - Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <div class="logo">Miguel<span>Dev</span></div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#design-system">Design System</a>
+                <a href="#contacto">Contacto</a>
+                <button id="themeToggle" class="theme-btn">🌙/☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero section container">
+            <div class="hero-content">
+                <h1>Hola, soy Miguel Angel Peñafiel Cadena</h1>
+                <h2>Ingeniero de Software</h2>
+                <p>Especializado en diseño y construcción de aplicaciones web y análisis de datos en Guayaquil, Guayas.
+                </p>
+                <div class="hero-actions">
+                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
+                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
+                </div>
+            </div>
+            <figure class="hero-image">
+                <img src="IMG_0006.JPG" alt="Fotografía de Miguel Peñafiel">
+            </figure>
+        </section>
+
+        <section id="sobre-mi" class="section container bg-surface">
+            <h2>Sobre mí</h2>
+            <article class="about-content">
+                <p>Soy Ingeniero en Software por la Universidad Estatal de Milagro (UNEMI). Actualmente trabajo como
+                    Ingeniero de Software en Tiendas Industriales Asociadas TIA S.A., donde desarrollo aplicaciones
+                    empresariales usando Django, APIs REST, e interfaces responsivas. También tengo experiencia en
+                    procesamiento de datos y Business Intelligence utilizando Python, SQL, Snowflake y Power BI.</p>
+            </article>
+        </section>
+
+        <section id="skills" class="section container">
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Backend & Datos</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django / FastAPI</li>
+                        <li>SQL / Snowflake</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>HTML5 / CSS3</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Herramientas</h3>
+                    <ul>
+                        <li>Git / Bitbucket</li>
+                        <li>Power BI</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section container bg-surface">
+            <h2>Proyectos Destacados</h2>
+            <p><em>* Sección en pausa hasta incorporar los ejemplos reales *</em></p>
+
+            <div class="filter-container">
+                <button class="btn btn-secondary filter-btn" data-filter="all">Todos</button>
+                <button class="btn btn-secondary filter-btn" data-filter="frontend">Frontend</button>
+                <button class="btn btn-secondary filter-btn" data-filter="backend">Backend</button>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card" data-category="backend">
+                    <figure>
+                        <img src="project1-placeholder.jpg" alt="Captura del proyecto 1">
+                    </figure>
+                    <div class="project-info">
+                        <h3>Proyecto 1 [Pendiente]</h3>
+                        <p>Descripción breve del problema que resuelve.</p>
+                        <div class="project-tags">
+                            <span class="badge">Python</span>
+                            <span class="badge">Django</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card" data-category="frontend">
+                    <figure>
+                        <img src="project2-placeholder.jpg" alt="Captura del proyecto 2">
+                    </figure>
+                    <div class="project-info">
+                        <h3>Proyecto 2 [Pendiente]</h3>
+                        <p>Descripción breve del problema que resuelve.</p>
+                        <div class="project-tags">
+                            <span class="badge">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-primary">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="design-system" class="section container">
+            <h2>Design System / Componentes</h2>
+            <article class="ds-section">
+                <h3>Colores</h3>
+                <div class="color-palette">
+                    <div class="color-box" style="background: var(--color-primary); color: white;">Primary</div>
+                    <div class="color-box" style="background: var(--color-secondary); color: white;">Secondary</div>
+                    <div class="color-box" style="background: var(--color-background); border: 1px solid #ccc;">
+                        Background</div>
+                    <div class="color-box" style="background: var(--color-surface); border: 1px solid #ccc;">Surface
+                    </div>
+                </div>
+            </article>
+            <article class="ds-section">
+                <h3>Tipografía</h3>
+                <h1>Encabezado H1</h1>
+                <h2>Encabezado H2</h2>
+                <h3>Encabezado H3</h3>
+                <p>Texto de párrafo normal para lectura.</p>
+            </article>
+            <article class="ds-section">
+                <h3>Componentes</h3>
+                <button class="btn btn-primary">Botón Primario</button>
+                <button class="btn btn-secondary">Botón Secundario</button>
+                <span class="badge">Badge/Skill</span>
+            </article>
+        </section>
+
+        <section id="contacto" class="section container bg-surface">
+            <h2>Contacto</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            </form>
+            <div class="social-links">
+                <p>Email: <a href="mailto:miguexang@gmail.com">miguexang@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/mpenafielc5" target="_blank">mpenafielc5</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Miguel Peñafiel. Todos los derechos reservados.</p>
+            <button id="backToTop" class="btn btn-secondary">Volver arriba</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
