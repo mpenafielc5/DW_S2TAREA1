@@ -7,7 +7,7 @@
     <meta name="color-scheme" content="light dark">
     <meta name="description"
         content="Portafolio de Miguel Ángel Peñafiel Cadena, Ingeniero de Software especializado en desarrollo web y Business Intelligence.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23E4002B'/%3E%3Ctext x='50' y='68' font-family='Segoe UI, Arial, sans-serif' font-size='52' font-weight='700' fill='white' text-anchor='middle'%3EMP%3C/text%3E%3C/svg%3E">
     <title>Miguel Peñafiel - Portafolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <script>
@@ -28,7 +28,19 @@
         <div class="container nav-container">
             <div class="logo">Miguel<span>Dev</span></div>
             <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación"
-                aria-expanded="false" aria-controls="navLinks">☰</button>
+                aria-expanded="false" aria-controls="navLinks">
+                <svg class="icon-menu-open" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="icon-menu-close" width="26" height="26" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="5" y1="5" x2="19" y2="19"></line>
+                    <line x1="19" y1="5" x2="5" y2="19"></line>
+                </svg>
+            </button>
             <nav class="nav-links" id="navLinks">
                 <a href="#inicio">Inicio</a>
                 <a href="#sobre-mi">Sobre mí</a>
@@ -68,7 +80,7 @@
             <div class="hero-content">
                 <h1>Hola, soy Miguel Angel Peñafiel Cadena</h1>
                 <h2>Ingeniero de Software</h2>
-                <p>Especializado en diseño y construcción de aplicaciones web y análisis de datos en Guayaquil, Guayas.
+                <p>Creo soluciones de software combinando desarrollo web, datos y Business Intelligence para resolver necesidades reales.
                 </p>
                 <div class="hero-actions">
                     <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
@@ -84,10 +96,12 @@
         <section id="sobre-mi" class="section container bg-surface">
             <h2>Sobre mí</h2>
             <article class="about-content">
-                <p>Soy Ingeniero en Software por la Universidad Estatal de Milagro (UNEMI). Actualmente trabajo como
-                    Ingeniero de Software en Tiendas Industriales Asociadas TIA S.A., donde desarrollo aplicaciones
-                    empresariales usando Django, APIs REST, e interfaces responsivas. También tengo experiencia en
-                    procesamiento de datos y Business Intelligence utilizando Python, SQL, Snowflake y Power BI.</p>
+                <p>Soy estudiante de Ingeniería en Software en la Universidad Estatal de Milagro (UNEMI), cursando
+                    el último semestre (8vo) y listo para el proceso de titulación. Actualmente trabajo como
+                    Ingeniero de Software Junior en Tiendas Industriales Asociadas TIA S.A., donde desarrollo
+                    aplicaciones empresariales usando Django, APIs REST, e interfaces responsivas. También tengo
+                    experiencia en procesamiento de datos y Business Intelligence utilizando Python, SQL, Snowflake
+                    y Power BI.</p>
             </article>
         </section>
 
@@ -115,7 +129,7 @@
                             <img src="assets/img/icons/sql.png" alt="SQL" class="skill-icon">
                             <div class="skill-details">
                                 <span class="skill-name">SQL</span>
-                                <span class="skill-level">Avanzado</span>
+                                <span class="skill-level">Intermedio</span>
                             </div>
                         </li>
                     </ul>
@@ -192,7 +206,7 @@
                         <div class="project-links">
                             <button class="btn btn-primary open-modal-btn" data-project="superstore">Ver
                                 Detalle</button>
-                            <a href="https://github.com/mpenafielc5/web_superstore.git" target="_blank"
+                            <a href="https://github.com/mpenafielc5/web_superstore.git" target="_blank" rel="noopener noreferrer"
                                 class="btn btn-secondary">Repositorio</a>
                         </div>
                     </div>
@@ -216,7 +230,7 @@
                         </div>
                         <div class="project-links">
                             <button class="btn btn-primary open-modal-btn" data-project="medicai">Ver Detalle</button>
-                            <a href="https://gitlab.com/mpenafielc5/medic_ai.git" target="_blank"
+                            <a href="https://gitlab.com/mpenafielc5/medic_ai.git" target="_blank" rel="noopener noreferrer"
                                 class="btn btn-secondary">Repositorio</a>
                         </div>
                     </div>
@@ -241,7 +255,7 @@
                         <div class="project-links">
                             <button class="btn btn-primary open-modal-btn" data-project="petcare">Ver Detalle</button>
                             <a href="https://drive.google.com/file/d/1EkV3BOpuYmF90Y_fSZUMEGePmVuVWzL3/view?usp=sharing"
-                                target="_blank" class="btn btn-secondary">Ver Proyecto</a>
+                                target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Ver Proyecto</a>
                         </div>
                     </div>
                 </article>
@@ -262,39 +276,93 @@
                 <h3>Colores</h3>
                 <p>Paleta minimalista: base en escala de grises/grafito, con el rojo institucional reservado
                     exclusivamente para acentos (botones principales, enlaces y detalles de marca).</p>
+
+                <h4 class="ds-subtitle">Colores de marca (iguales en ambos modos)</h4>
                 <div class="color-palette">
-                    <div class="color-box" style="background: var(--color-primary); color: white;">
-                        Primary (acento)<br><span>#E4002B</span>
+                    <div class="color-box" style="background: #E4002B; color: white;">
+                        --color-primary<br><span>#E4002B</span>
                     </div>
-                    <div class="color-box" style="background: var(--color-secondary); color: white;">
-                        Secondary<br><span>#3F3F46</span>
+                    <div class="color-box" style="background: #3F3F46; color: white;">
+                        --color-secondary<br><span>#3F3F46</span>
                     </div>
-                    <div class="color-box"
-                        style="background: var(--color-background); border: 1px solid var(--color-surface-alt); color: var(--color-text);">
-                        Background<br><span>#ffffff</span>
+                    <div class="color-box" style="background: #dc2626; color: white;">
+                        --color-danger<br><span>#dc2626</span>
                     </div>
-                    <div class="color-box"
-                        style="background: var(--color-surface); border: 1px solid var(--color-surface-alt); color: var(--color-text);">
-                        Surface<br><span>#f5f5f5</span>
+                </div>
+
+                <h4 class="ds-subtitle">Paleta — Modo Claro</h4>
+                <div class="color-palette">
+                    <div class="color-box" style="background: #ffffff; border: 1px solid #e5e5e5; color: #18181b;">
+                        --color-background<br><span>#ffffff</span>
                     </div>
-                    <div class="color-box" style="background: var(--color-text); color: var(--color-background);">
-                        Text<br><span>#18181b</span>
+                    <div class="color-box" style="background: #f5f5f5; border: 1px solid #e5e5e5; color: #18181b;">
+                        --color-surface<br><span>#f5f5f5</span>
+                    </div>
+                    <div class="color-box" style="background: #e5e5e5; color: #18181b;">
+                        --color-surface-alt<br><span>#e5e5e5</span>
+                    </div>
+                    <div class="color-box" style="background: #18181b; color: #ffffff;">
+                        --color-text<br><span>#18181b</span>
+                    </div>
+                    <div class="color-box" style="background: #e5e5e5; color: #52525b;">
+                        --color-text-muted<br><span>#52525b</span>
+                    </div>
+                </div>
+
+                <h4 class="ds-subtitle">Paleta — Modo Oscuro</h4>
+                <div class="color-palette">
+                    <div class="color-box" style="background: #18181b; border: 1px solid #1f1f22; color: #f4f4f5;">
+                        --color-background<br><span>#18181b</span>
+                    </div>
+                    <div class="color-box" style="background: #27272a; border: 1px solid #1f1f22; color: #f4f4f5;">
+                        --color-surface<br><span>#27272a</span>
+                    </div>
+                    <div class="color-box" style="background: #1f1f22; color: #f4f4f5;">
+                        --color-surface-alt<br><span>#1f1f22</span>
+                    </div>
+                    <div class="color-box" style="background: #f4f4f5; color: #18181b;">
+                        --color-text<br><span>#f4f4f5</span>
+                    </div>
+                    <div class="color-box" style="background: #1f1f22; color: #a1a1aa;">
+                        --color-text-muted<br><span>#a1a1aa</span>
                     </div>
                 </div>
             </article>
 
             <article class="ds-section">
                 <h3>Tipografía</h3>
-                <p class="type-sample type-sample--h1" aria-hidden="true">Encabezado h1</p>
-                <p class="type-sample type-sample--h2" aria-hidden="true">Encabezado h2</p>
-                <p class="type-sample type-sample--h3" aria-hidden="true">Encabezado h3</p>
-                <p>Texto de párrafo secundario para lectura general.</p>
-                <a href="#design-system">Enlace de ejemplo</a>
+                <p>Catálogo de estilos tipográficos usados en el proyecto (valores base en escritorio; h1 y h2 se
+                    reducen de forma responsive en tablet y móvil mediante media queries):</p>
+                <div class="type-catalog">
+                    <div class="type-row">
+                        <p class="type-sample type-sample--h1" aria-hidden="true">Encabezado h1</p>
+                        <code>3.5rem (56px) / weight 700</code>
+                    </div>
+                    <div class="type-row">
+                        <p class="type-sample type-sample--h2" aria-hidden="true">Encabezado h2</p>
+                        <code>2.25rem (36px) / weight 700</code>
+                    </div>
+                    <div class="type-row">
+                        <p class="type-sample type-sample--h3" aria-hidden="true">Encabezado h3</p>
+                        <code>1.5rem (24px) / weight 700</code>
+                    </div>
+                    <div class="type-row">
+                        <p class="type-sample-body">Texto de párrafo secundario para lectura general.</p>
+                        <code>1.15rem (18.4px) / weight 400</code>
+                    </div>
+                    <div class="type-row">
+                        <a href="#design-system" aria-hidden="true" tabindex="-1">Enlace de ejemplo</a>
+                        <code>1.15rem (18.4px) / weight 400 (color primary)</code>
+                    </div>
+                </div>
             </article>
 
             <article class="ds-section">
                 <h3>Espaciado</h3>
-                <p>Escala de espaciados usada en todo el proyecto mediante Custom Properties:</p>
+                <p>Escala de espaciados usada en todo el proyecto mediante Custom Properties. Los valores de
+                    <code>--space-lg</code> y <code>--space-xl</code> mostrados son los de escritorio; se reducen en
+                    tablet/móvil para no comprimir el contenido (la barra de cada fila sí refleja el valor real
+                    activo en tu pantalla actual):</p>
                 <div class="spacing-scale">
                     <div class="spacing-row">
                         <span class="spacing-swatch" style="width: var(--space-xs);"></span>
@@ -389,8 +457,38 @@
                 <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
             </form>
             <div class="social-links">
-                <p>Email: <a href="mailto:miguexang@gmail.com">miguexang@gmail.com</a></p>
-                <p>GitHub: <a href="https://github.com/mpenafielc5" target="_blank">mpenafielc5</a></p>
+                <p>Conecta conmigo</p>
+                <div class="social-icons">
+                    <a href="mailto:mpenafielc5@unemi.edu.ec" class="social-icon-link" aria-label="Enviarme un correo">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 6-10 7L2 6"></path>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://github.com/mpenafielc5" target="_blank" rel="noopener noreferrer"
+                        class="social-icon-link" aria-label="Ver mi perfil de GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21">
+                            </path>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/miguexang/" target="_blank" rel="noopener noreferrer"
+                        class="social-icon-link" aria-label="Ver mi perfil de LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>

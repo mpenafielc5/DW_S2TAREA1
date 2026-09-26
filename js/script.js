@@ -5,7 +5,6 @@ function setMenuState(isOpen) {
     navLinks.classList.toggle('active', isOpen);
     mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
     mobileMenuBtn.setAttribute('aria-label', isOpen ? 'Cerrar menú de navegación' : 'Abrir menú de navegación');
-    mobileMenuBtn.textContent = isOpen ? '✕' : '☰';
 }
 
 mobileMenuBtn.addEventListener('click', () => {

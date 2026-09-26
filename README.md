@@ -1,10 +1,8 @@
-# Portafolio Web - Miguel Ángel Peñafiel Cadena
+# Portafolio Web - Miguel Angel Peñafiel Cadena
 
 Portafolio personal e interactivo desarrollado como prueba técnica / tarea académica, aplicando HTML5 semántico, CSS3 (Custom Properties) y JavaScript vanilla.
 
-🔗 **Demo en vivo:** _agregar aquí el link de GitHub Pages una vez publicado_
-
-## 📋 Contenido
+## Contenido
 
 - Inicio / Presentación
 - Sobre mí
@@ -13,22 +11,44 @@ Portafolio personal e interactivo desarrollado como prueba técnica / tarea acad
 - Design System / Componentes
 - Contacto
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - HTML5 semántico
 - CSS3 (Custom Properties, Flexbox, Grid, Media Queries)
 - JavaScript (Vanilla JS, sin frameworks)
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - Menú de navegación responsive
-- Modo claro / oscuro con persistencia en `localStorage`
+- Modo claro / oscuro con persistencia en localStorage
 - Modal interactivo con el detalle de cada proyecto
 - Validación de formulario de contacto en tiempo real
 - Botón "Volver arriba"
-- Diseño 100% responsive (móvil, tablet y escritorio)
+- Diseño responsive (móvil, tablet y escritorio)
 
-## 📂 Estructura del proyecto
+## Resultados
+
+### Inicio
+
+![Página de inicio del portafolio](assets/img/portfolio/inicio.png)
+
+### Sobre mí
+
+![Sección Sobre mí](assets/img/portfolio/sobre-mi.png)
+
+### Habilidades
+
+![Sección de habilidades](assets/img/portfolio/habilidades.png)
+
+### Proyectos
+
+![Sección de proyectos](assets/img/portfolio/proyectos.png)
+
+### Contacto
+
+![Sección de contacto](assets/img/portfolio/contacto.png)
+
+## Estructura del proyecto
 
 ```
 ├── index.html
@@ -38,21 +58,18 @@ Portafolio personal e interactivo desarrollado como prueba técnica / tarea acad
 │   └── script.js
 └── assets/
     └── img/
-        ├── profile/     # Foto de perfil
-        ├── icons/       # Íconos de tecnologías (skills)
-        └── projects/    # Capturas de los proyectos
+        ├── profile/
+        ├── icons/
+        └── projects/
 ```
 
-## 👀 Cómo visualizarlo
+## Cómo visualizarlo
 
 1. Clona este repositorio.
-2. Abre `index.html` en tu navegador (no requiere instalación ni dependencias).
+2. Abre index.html en tu navegador.
 
-## 📸 Capturas
+## Contacto
 
-_Agregar aquí una o dos capturas del portafolio (escritorio y móvil)._
-
-## 📧 Contacto
-
-- Email: miguexang@gmail.com
-- GitHub: [mpenafielc5](https://github.com/mpenafielc5)
+- Email: mpenafielc5@unemi.edu.ec
+- GitHub: https://github.com/mpenafielc5
+- LinkedIn: https://www.linkedin.com/in/miguexang/
