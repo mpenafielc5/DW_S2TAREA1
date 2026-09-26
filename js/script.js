@@ -11,9 +11,14 @@ mobileMenuBtn.addEventListener('click', () => {
     setMenuState(!navLinks.classList.contains('active'));
 });
 
-// Cierra el menú móvil automáticamente al elegir una sección
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => setMenuState(false));
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+        setMenuState(false);
+    }
 });
 
 const themeToggle = document.getElementById('themeToggle');
