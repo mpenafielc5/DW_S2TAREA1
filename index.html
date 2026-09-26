@@ -4,15 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="description"
+        content="Portafolio de Miguel Ángel Peñafiel Cadena, Ingeniero de Software especializado en desarrollo web y Business Intelligence.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
     <title>Miguel Peñafiel - Portafolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        (function () {
+            const saved = localStorage.getItem('theme');
+            if (saved) {
+                document.documentElement.setAttribute('data-theme', saved);
+            } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        })();
+    </script>
 </head>
 
 <body>
+    <a href="#inicio" class="skip-link">Saltar al contenido principal</a>
     <header class="header">
         <div class="container nav-container">
             <div class="logo">Miguel<span>Dev</span></div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación"
+                aria-expanded="false" aria-controls="navLinks">☰</button>
             <nav class="nav-links" id="navLinks">
                 <a href="#inicio">Inicio</a>
                 <a href="#sobre-mi">Sobre mí</a>
@@ -20,7 +36,29 @@
                 <a href="#proyectos">Proyectos</a>
                 <a href="#design-system">Design System</a>
                 <a href="#contacto">Contacto</a>
-                <button id="themeToggle" class="theme-btn">🌙/☀️</button>
+
+                <label class="theme-switch" for="themeToggle">
+                    <input type="checkbox" id="themeToggle" aria-label="Cambiar modo de visualización">
+                    <div class="slider">
+                        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <div class="thumb"></div>
+                        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </div>
+                </label>
             </nav>
         </div>
     </header>
@@ -39,6 +77,7 @@
             </div>
             <figure class="hero-image">
                 <img src="IMG_0006.JPG" alt="Fotografía de Miguel Peñafiel">
+                <figcaption class="visually-hidden">Miguel Peñafiel, Ingeniero de Software</figcaption>
             </figure>
         </section>
 
@@ -57,24 +96,75 @@
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>Backend & Datos</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>Django / FastAPI</li>
-                        <li>SQL / Snowflake</li>
+                    <ul class="skill-list">
+                        <li>
+                            <img src="python.png" alt="Python" class="skill-icon">
+                            <div class="skill-details">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="django.png" alt="Django" class="skill-icon">
+                            <div class="skill-details">
+                                <span class="skill-name">Django</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="sql.png" alt="SQL" class="skill-icon">
+                            <div class="skill-details">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
+
                 <div class="skill-card">
                     <h3>Frontend</h3>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>HTML5 / CSS3</li>
+                    <ul class="skill-list">
+                        <li>
+                            <img src="javascript.png" alt="JavaScript" class="skill-icon">
+                            <div class="skill-details">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="html5.png" alt="HTML5" class="skill-icon">
+                            <div class="skill-details">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="css3.png" alt="CSS3" class="skill-icon">
+                            <div class="skill-details">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
+
                 <div class="skill-card">
-                    <h3>Herramientas</h3>
-                    <ul>
-                        <li>Git / Bitbucket</li>
-                        <li>Power BI</li>
+                    <h3>Herramientas & BI</h3>
+                    <ul class="skill-list">
+                        <li>
+                            <img src="git.png" alt="Git" class="skill-icon">
+                            <div class="skill-details">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-level">Avanzado</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="pbi.png" alt="Power BI" class="skill-icon">
+                            <div class="skill-details">
+                                <span class="skill-name">Power BI</span>
+                                <span class="skill-level">Intermedio</span>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -82,74 +172,197 @@
 
         <section id="proyectos" class="section container bg-surface">
             <h2>Proyectos Destacados</h2>
-            <p><em>* Sección en pausa hasta incorporar los ejemplos reales *</em></p>
-
-            <div class="filter-container">
-                <button class="btn btn-secondary filter-btn" data-filter="all">Todos</button>
-                <button class="btn btn-secondary filter-btn" data-filter="frontend">Frontend</button>
-                <button class="btn btn-secondary filter-btn" data-filter="backend">Backend</button>
-            </div>
 
             <div class="projects-grid">
-                <article class="project-card" data-category="backend">
+                <article class="project-card">
                     <figure>
-                        <img src="project1-placeholder.jpg" alt="Captura del proyecto 1">
+                        <img src="superstore.png" alt="Superstore Dashboard">
+                        <figcaption class="visually-hidden">Vista del dashboard de Superstore</figcaption>
                     </figure>
                     <div class="project-info">
-                        <h3>Proyecto 1 [Pendiente]</h3>
-                        <p>Descripción breve del problema que resuelve.</p>
+                        <h3>Superstore Dashboard</h3>
+                        <p><strong>Problema:</strong> falta de visibilidad rápida sobre ventas, categorías y ubicaciones
+                            para la toma de decisiones. <strong>Solución:</strong> dashboard analítico con KPIs,
+                            filtros y gráficos interactivos.</p>
                         <div class="project-tags">
-                            <span class="badge">Python</span>
                             <span class="badge">Django</span>
+                            <span class="badge">MySQL</span>
+                            <span class="badge">Chart.js</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-primary">Repositorio</a>
+                            <button class="btn btn-primary open-modal-btn" data-project="superstore">Ver
+                                Detalle</button>
+                            <a href="https://github.com/mpenafielc5/web_superstore.git" target="_blank"
+                                class="btn btn-secondary">Repositorio</a>
                         </div>
                     </div>
                 </article>
-                <article class="project-card" data-category="frontend">
+
+                <article class="project-card">
                     <figure>
-                        <img src="project2-placeholder.jpg" alt="Captura del proyecto 2">
+                        <img src="medicai.png" alt="Medic AI Platform">
+                        <figcaption class="visually-hidden">Vista de la plataforma Medic AI</figcaption>
                     </figure>
                     <div class="project-info">
-                        <h3>Proyecto 2 [Pendiente]</h3>
-                        <p>Descripción breve del problema que resuelve.</p>
+                        <h3>Medic AI</h3>
+                        <p><strong>Problema:</strong> apoyo limitado para el personal médico en la preevaluación de
+                            síntomas y el análisis epidemiológico. <strong>Solución:</strong> plataforma con IA para
+                            sugerencia de diagnósticos y analítica en tiempo real.</p>
                         <div class="project-tags">
-                            <span class="badge">JavaScript</span>
+                            <span class="badge">Python</span>
+                            <span class="badge">Django</span>
+                            <span class="badge">Scikit-learn</span>
+                            <span class="badge">D3.js</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-primary">Repositorio</a>
+                            <button class="btn btn-primary open-modal-btn" data-project="medicai">Ver Detalle</button>
+                            <a href="https://gitlab.com/mpenafielc5/medic_ai.git" target="_blank"
+                                class="btn btn-secondary">Repositorio</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <figure>
+                        <img src="petcare.png" alt="PetCare 360 BI Solution">
+                        <figcaption class="visually-hidden">Vista del dashboard de PetCare 360</figcaption>
+                    </figure>
+                    <div class="project-info">
+                        <h3>PetCare 360 - Business Intelligence</h3>
+                        <p><strong>Problema:</strong> falta de una arquitectura de datos que soporte decisiones
+                            estratégicas de rentabilidad y operación. <strong>Solución:</strong> Data Warehouse,
+                            Cubo OLAP y Dashboard en Power BI end-to-end.</p>
+                        <div class="project-tags">
+                            <span class="badge">Power BI</span>
+                            <span class="badge">SSAS / Cubo OLAP</span>
+                            <span class="badge">SSIS / ETL</span>
+                            <span class="badge">SQL Server</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="btn btn-primary open-modal-btn" data-project="petcare">Ver Detalle</button>
+                            <a href="https://drive.google.com/file/d/1EkV3BOpuYmF90Y_fSZUMEGePmVuVWzL3/view?usp=sharing"
+                                target="_blank" class="btn btn-secondary">Ver Proyecto</a>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
 
+        <div id="projectModal" class="modal" aria-hidden="true">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">&times;</button>
+                <div class="modal-body" id="modalBody"></div>
+            </div>
+        </div>
+
         <section id="design-system" class="section container">
             <h2>Design System / Componentes</h2>
+
             <article class="ds-section">
                 <h3>Colores</h3>
                 <div class="color-palette">
-                    <div class="color-box" style="background: var(--color-primary); color: white;">Primary</div>
-                    <div class="color-box" style="background: var(--color-secondary); color: white;">Secondary</div>
-                    <div class="color-box" style="background: var(--color-background); border: 1px solid #ccc;">
-                        Background</div>
-                    <div class="color-box" style="background: var(--color-surface); border: 1px solid #ccc;">Surface
+                    <div class="color-box" style="background: var(--color-primary); color: white;">
+                        Primary<br><span>#2563eb</span>
+                    </div>
+                    <div class="color-box" style="background: var(--color-secondary); color: white;">
+                        Secondary<br><span>#7c3aed</span>
+                    </div>
+                    <div class="color-box"
+                        style="background: var(--color-background); border: 1px solid var(--color-surface-alt); color: var(--color-text);">
+                        Background<br><span>#ffffff</span>
+                    </div>
+                    <div class="color-box"
+                        style="background: var(--color-surface); border: 1px solid var(--color-surface-alt); color: var(--color-text);">
+                        Surface<br><span>#f8fafc</span>
+                    </div>
+                    <div class="color-box" style="background: var(--color-text); color: white;">
+                        Text<br><span>#0f172a</span>
                     </div>
                 </div>
             </article>
+
             <article class="ds-section">
                 <h3>Tipografía</h3>
-                <h1>Encabezado H1</h1>
-                <h2>Encabezado H2</h2>
-                <h3>Encabezado H3</h3>
-                <p>Texto de párrafo normal para lectura.</p>
+                <p class="type-sample type-sample--h1" aria-hidden="true">Encabezado h1</p>
+                <p class="type-sample type-sample--h2" aria-hidden="true">Encabezado h2</p>
+                <p class="type-sample type-sample--h3" aria-hidden="true">Encabezado h3</p>
+                <p>Texto de párrafo secundario para lectura general.</p>
+                <a href="#design-system">Enlace de ejemplo</a>
             </article>
+
+            <article class="ds-section">
+                <h3>Espaciado</h3>
+                <p>Escala de espaciados usada en todo el proyecto mediante Custom Properties:</p>
+                <div class="spacing-scale">
+                    <div class="spacing-row">
+                        <span class="spacing-swatch" style="width: var(--space-xs);"></span>
+                        <code>--space-xs: 0.5rem</code>
+                    </div>
+                    <div class="spacing-row">
+                        <span class="spacing-swatch" style="width: var(--space-sm);"></span>
+                        <code>--space-sm: 1rem</code>
+                    </div>
+                    <div class="spacing-row">
+                        <span class="spacing-swatch" style="width: var(--space-md);"></span>
+                        <code>--space-md: 1.5rem</code>
+                    </div>
+                    <div class="spacing-row">
+                        <span class="spacing-swatch" style="width: var(--space-lg);"></span>
+                        <code>--space-lg: 2.5rem</code>
+                    </div>
+                    <div class="spacing-row">
+                        <span class="spacing-swatch" style="width: var(--space-xl);"></span>
+                        <code>--space-xl: 5rem</code>
+                    </div>
+                </div>
+            </article>
+
             <article class="ds-section">
                 <h3>Componentes</h3>
-                <button class="btn btn-primary">Botón Primario</button>
-                <button class="btn btn-secondary">Botón Secundario</button>
-                <span class="badge">Badge/Skill</span>
+
+                <h4 class="ds-subtitle">Botones y badge</h4>
+                <div class="ds-demo-row">
+                    <button class="btn btn-primary">Botón Primario</button>
+                    <button class="btn btn-secondary">Botón Secundario</button>
+                    <span class="badge">Badge/Skill</span>
+                </div>
+
+                <h4 class="ds-subtitle">Inputs</h4>
+                <div class="ds-demo-inputs">
+                    <input type="text" placeholder="Input de ejemplo">
+                    <textarea placeholder="Textarea de ejemplo" rows="3"></textarea>
+                </div>
+
+                <h4 class="ds-subtitle">Navbar</h4>
+                <div class="ds-navbar-demo">
+                    <div class="logo">Miguel<span>Dev</span></div>
+                    <nav class="ds-navbar-demo-links">
+                        <a href="#design-system">Inicio</a>
+                        <a href="#design-system">Proyectos</a>
+                        <a href="#design-system">Contacto</a>
+                    </nav>
+                </div>
+
+                <h4 class="ds-subtitle">Card de proyecto</h4>
+                <div class="ds-card-demo">
+                    <article class="project-card">
+                        <figure>
+                            <img src="superstore.png" alt="Ejemplo de card de proyecto">
+                            <figcaption class="visually-hidden">Card de ejemplo</figcaption>
+                        </figure>
+                        <div class="project-info">
+                            <h3>Nombre del Proyecto</h3>
+                            <p>Breve descripción del proyecto y del problema que resuelve.</p>
+                            <div class="project-tags">
+                                <span class="badge">Tecnología</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="btn btn-primary" disabled>Ver Detalle</button>
+                                <span class="btn btn-secondary" aria-disabled="true">Repositorio</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
             </article>
         </section>
 
@@ -158,15 +371,18 @@
             <form id="contactForm" class="contact-form">
                 <div class="form-group">
                     <label for="name">Nombre</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required minlength="2">
+                    <span class="error-message" id="nameError" aria-live="polite"></span>
                 </div>
                 <div class="form-group">
                     <label for="email">Correo</label>
                     <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError" aria-live="polite"></span>
                 </div>
                 <div class="form-group">
                     <label for="message">Mensaje</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="4" required minlength="10"></textarea>
+                    <span class="error-message" id="messageError" aria-live="polite"></span>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
             </form>
@@ -178,7 +394,7 @@
     </main>
 
     <footer>
-        <div class="container text-center">
+        <div class="container">
             <p>&copy; 2026 Miguel Peñafiel. Todos los derechos reservados.</p>
             <button id="backToTop" class="btn btn-secondary">Volver arriba</button>
         </div>
