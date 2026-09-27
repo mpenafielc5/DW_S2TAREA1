@@ -46,7 +46,7 @@ Capturas del portafolio web desarrollado:
 
 ### Habilidades
 
-![Sección de habilidades](assets/img/portfolio/habilidades.png)
+![Sección de habilidades](assets/img/portfolio/skills.png)
 
 ### Proyectos
 
